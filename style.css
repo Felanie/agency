@@ -1,15 +1,31 @@
+:root {
+    --color-gradient-main: linear-gradient(70deg, #FAB12B, #F7318B);
+    --color-text-base: #2A343E;
+    --color-link-hover: #3172DA; 
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    color: #2A343E;
+    color: var(--color-text-base);
     font-size: 16px;
     line-height: 1.7;
 }
+
+a {
+    color: var(--color-text-base);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
 .header {
     border-radius: 0 0 60px 60px;
     box-shadow: 0px -2px 40px rgba(0, 0, 0, 0.07);
 }
+
 .header .container {
     padding: 15px 0;
     display: flex;
@@ -17,8 +33,27 @@ body {
     justify-content: space-between;
 }
 
-.header-nav ul{
+.header-nav ul {
     display: flex;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+}
+
+.header-phone {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header-phone:hover {
+    text-decoration: underline;
 }
 
 .header-buttons {
@@ -26,50 +61,50 @@ body {
     gap: 15px;
 }
 
- .button {
+.button {
     padding: 0 30px;
-    background: linear-gradient(70deg, #FAB12B, #F7318B);
+    background: var(--color-gradient-main);
     color: white;
     height: 70px;
     display: inline-flex;
     align-items: center;
     border-radius: 20px;
     text-decoration: none;
- }
- .button:hover {
-    opacity: 0.9;
- }
+}
 
- .icon-button {
+.button:hover {
+    opacity: 0.9;
+}
+
+.icon-button {
     height: 70px;
     width: 70px;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-flex;
- }
+}
 
 
- .icon-button--telegram {
+.icon-button--telegram {
     background-color: #039BE5;
     background-image: url(/images/telegram.svg);
- }
+}
 
- .icon-button--telegram:hover {
+.icon-button--telegram:hover {
     background-color: #0779B1;
- }
+}
 
- .icon-button--whatsapp {
+.icon-button--whatsapp {
     background-color: #27A11A;
     background-image: url(/images/whatsapp.svg);
- }
+}
 
- .icon-button--whatsapp:hover {
+.icon-button--whatsapp:hover {
     background-color: #137C08;
- }
+}
 
 h1 {
-    font-family: "Open Sans", sans-serif;
     font-size: 80px;
     line-height: 1.2;
 }
@@ -92,7 +127,7 @@ h1 {
     right: 20px;
     width: 70px;
     height: 70px;
-    
+
 }
 
 h2 {
@@ -125,7 +160,7 @@ h2 {
 }
 
 .develop-block:hover {
-    background: linear-gradient(70deg, #FAB12B, #F7318B);
+    background: var(--color-gradient-main);
     color: #fff;
 }
 
@@ -133,10 +168,12 @@ h2 {
     width: 40px;
     height: 40px;
 }
+
 .small {
     font-size: 14px;
     line-height: 1.6;
 }
+
 .list {
     padding-left: 20px;
 }
@@ -173,12 +210,7 @@ h2 {
     font-weight: bold;
     font-size: 25px;
     line-height: 1.25;
-    font-family: "Open Sans", sans-serif;
-    color: #2A343E;
+    color: var(--color-text-base);
     margin: 0;
     margin-left: 15px;
 }
-
-
-
-
