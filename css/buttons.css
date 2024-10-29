@@ -1,0 +1,41 @@
+.button {
+    padding: 0 30px;
+    background: var(--color-gradient-main);
+    color: white;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.icon-button {
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+}
+
+.icon-button--telegram {
+    background-color: #039BE5;
+    background-image: url(/images/telegram.svg);
+}
+
+.icon-button--telegram:hover {
+    background-color: #0779B1;
+}
+
+.icon-button--whatsapp {
+    background-color: #27A11A;
+    background-image: url(/images/whatsapp.svg);
+}
+
+.icon-button--whatsapp:hover {
+    background-color: #137C08;
+}

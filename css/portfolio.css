@@ -1,0 +1,16 @@
+.portfolio-examples {
+    padding-bottom: 50px;
+}
+
+.portfolio-example img {
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-example h3 {
+    margin-bottom: 15px;
+}
+
+.portfolio-example p {
+    margin: 0;
+}

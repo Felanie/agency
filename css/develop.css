@@ -1,0 +1,53 @@
+.develop {
+    background-color: #2d3844;
+    border-radius: 60px;
+}
+
+.outdoor {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.develop .container h2 {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.develop-icon {
+    background-color: white;
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 40px;
+}
+
+.develop-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 80px;
+}
+
+.develop-block {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 60px;
+}
+
+.develop-block:hover {
+    background: var(--color-gradient-main);
+    color: #fff;
+}
+
+.develop-block img {
+    width: 40px;
+    height: 40px;
+}
+
+.list {
+    padding-left: 20px;
+}
